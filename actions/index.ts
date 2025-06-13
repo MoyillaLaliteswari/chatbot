@@ -1,6 +1,4 @@
 "use server";
-import { ChatCompletionMessageParam } from "openai/resources";
-import { ReactNode } from "react";
 import Together from "together-ai";
 
 const together = new Together();
@@ -27,14 +25,14 @@ Example sentence:
 **[Japanese sentence in hiragana]** (*Romaji*) — “English meaning.”
 
 Do not use kanji unless the user explicitly asks for it. Always include hiragana and katakana. Output should be clear and well-formatted using markdown.
-`
+`,
     },
-    ...chatMessages
+    ...chatMessages,
   ];
 
   const completion = await together.chat.completions.create({
     messages: chat,
-    model: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
+    model: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
   });
 
   console.log("Completion response:", completion.choices[0]);

@@ -59,7 +59,7 @@ export default function BotMessage({
 
       {/* Message content */}
       <div className="flex flex-col">
-        <span className="text-xs text-gray-500 mb-1 italic">{role}</span>
+        <span className="text-xs text-gray-500 mb-1 italic">Assitant</span>
 
         <div className="max-w-md rounded-md border border-gray-300 bg-gray-50 px-4 py-3 shadow-md text-sm font-sans">
           <div className="prose prose-sm leading-relaxed whitespace-pre-wrap">
